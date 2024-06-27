@@ -93,6 +93,8 @@ app.post('/hasData', (request, response) =>{
         response.send('Data Found');
       }
     });
+  } catch (error) {
+    console.error('Error starting cleanup schedule:', error);
   }
 })
 
